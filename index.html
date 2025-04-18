@@ -49,18 +49,19 @@
       color: #6dd8ff;
       margin-bottom: 0.5rem;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 2rem;
+    .download-button {
       background: #6dd8ff;
       color: #000;
       padding: 0.8rem 1.5rem;
+      border: none;
       border-radius: 8px;
-      text-decoration: none;
+      font-size: 1rem;
       font-weight: bold;
+      cursor: pointer;
       transition: background 0.3s ease;
+      margin-top: 2rem;
     }
-    a.button:hover {
+    .download-button:hover {
       background: #91e7ff;
     }
     .lang-note {
@@ -103,9 +104,12 @@
       </div>
     </div>
 
-    <a class="https://www.dropbox.com/scl/fi/mcx82q4uhlik1okenaxav/TaLyra_Windows_Installer.exe?rlkey=g63hiu69skktmh9xdzfi9zc95&st=027rt0kj&dl=1" target="_blank">
-      📥 Télécharger pour Windows
-    </a>
+    <form action="https://www.dropbox.com/scl/fi/mcx82q4uhlik1okenaxav/TaLyra_Windows_Installer.exe?rlkey=g63hiu69skktmh9xdzfi9zc95&st=027rt0kj&dl=1">
+      <button type="submit" class="download-button">
+        📥 Télécharger pour Windows
+      </button>
+    </form>
+
     <p class="lang-note">Disponible uniquement en français 🇫🇷</p>
   </div>
 </body>
